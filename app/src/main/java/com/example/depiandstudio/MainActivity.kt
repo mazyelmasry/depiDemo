@@ -10,7 +10,6 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity()
 {
-    lateinit var leftButton:Button
     lateinit var rightButton:Button
     lateinit var textView:TextView
 
@@ -20,7 +19,6 @@ class MainActivity : AppCompatActivity()
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        leftButton = findViewById(R.id.left_button)
         rightButton = findViewById(R.id.right_button)
 //        textView = findViewById(R.id.textView)
 
@@ -30,10 +28,6 @@ class MainActivity : AppCompatActivity()
             insets
         }
 
-        leftButton.setOnClickListener()
-        {
-            leftButtonClicked()
-        }
 
 
         rightButton.setOnClickListener()
@@ -52,16 +46,5 @@ class MainActivity : AppCompatActivity()
 //        rightButton.setTextColor(R.color.white)
 //        leftButton.setBackgroundColor(R.color.white)
 //        leftButton.setTextColor(R.color.black)
-        leftButton.text = "Left Button"
-    }
-    fun leftButtonClicked()
-    {
-//        textView.text = "Left button clicked"
-//        leftButton.text = "Clicked"
-//        leftButton.setBackgroundColor(R.color.black)
-//        leftButton.setTextColor(R.color.white)
-//        rightButton.setBackgroundColor(R.color.white)
-//        rightButton.setTextColor(R.color.black)
-        rightButton.text = "Right Button"
     }
 }
